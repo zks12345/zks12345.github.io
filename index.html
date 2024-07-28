@@ -51,7 +51,7 @@
 
 <body>
     <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-        <img src="./111.jpg" alt="张克帅" style="width: 80px; height: 80px;" />
+        <img src="https://ts3.cn.mm.bing.net/th?id=OIP-C.iUTakkk6tN_jlknidalt5gHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="张克帅" style="width: 80px; height: 80px;" />
         <article style="
         max-width: 700px;
         margin: 30px auto;
@@ -60,7 +60,8 @@
         font-size: 17px;
         line-height: 1.7;
         text-size-adjust: 100%;">
-            <p>你们好呀！我叫<author>张克帅</author>，毕业于<a href="https://www.asnc.edu.cn/" target="_blank" rel="noopener noreferrer">鞍山师范学院</a></p>
+            <p>你们好呀！我叫<author>张克帅</author>，毕业于<a href="https://www.asnc.edu.cn/" target="_blank"
+                    rel="noopener noreferrer">鞍山师范学院</a></p>
             <p>虽然学历是块敲门砖，但我相信只要自己足够强大，就会打破制度</p>
             <p style="color: brown;">下面是我的个人介绍</p>
             <p>张克帅，男，满族人，出生于2001.01.26，身高171，体重140</p>
@@ -76,7 +77,19 @@
             <p>在校内和校外多次的工作经历使我能快速适应新的工作并且和同事建立良好的关系，同样我也是一个幽默风趣的人，具有强烈的责任和工作热情。</p>
             <p style="color: brown;">我深信:学历代表过去，能力代表现在，学习力代表未来</p>
             <hr>
-            
+            <div id="box"></div>
+            <script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" alt="qrcode.min.js">
+            </script>
+            <script>
+                const qrcode = new QRCode("box", {
+                    text: "weixin:15084007859",
+                    width: 128,
+                    height: 128,
+                    colorDark: "darkblue",
+                    colorLight: "white",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            </script>
 
 </body>
 <footer style="
@@ -91,9 +104,10 @@
 </footer>
 <script>
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker.register("sw.js");
-      });
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("sw.js");
+        });
     }
-  </script>
+</script>
+
 </html>
